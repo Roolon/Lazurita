@@ -1,2 +1,2 @@
 # Lazurita
-some shitty javapinus
+TY PIDOR, KSTA
