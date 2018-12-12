@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.openweathermap.java-api:api-common:1.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openweathermap.java-api/api-common/1.2/a7614be7354e4e4f74bf7ee8871afb50e6418765/api-common-1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openweathermap.java-api/api-common/1.2/dec23e36867c73d9daff6ad52600701d02e7a1f1/api-common-1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

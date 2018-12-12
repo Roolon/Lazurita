@@ -22,7 +22,7 @@ public class RandomDiceCommand implements Command {
 
         if (inputs[0].equalsIgnoreCase("dice")) {
             int rnd = 1 + (int) (Math.random() * ((6 - 1) + 1));
-            embedBuilder.addField("выбрасывает кубик 1d6:", String.valueOf(rnd), true);
+            embedBuilder.addField("РІС‹Р±СЂР°СЃС‹РІР°РµС‚ РєСѓР±РёРє 1d6:", String.valueOf(rnd), true);
             channel.sendMessage(embedBuilder.build()).queue();
             return true;
         } else {

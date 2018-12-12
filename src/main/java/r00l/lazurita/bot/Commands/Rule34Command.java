@@ -61,7 +61,7 @@ public boolean execute(Bot bot, Message message, MessageChannel channel, User au
          for (Element link : links) {
 
         	 linkscash.add(link.attr("href"));
-        	 System.out.println(linkscash.size());
+        	 //System.out.println(linkscash.size());
          }
          
          if (linkscash.size()==0){

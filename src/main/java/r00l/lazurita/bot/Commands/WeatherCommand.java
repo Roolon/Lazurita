@@ -5,20 +5,14 @@ import net.dv8tion.jda.core.entities.Message;
 import net.dv8tion.jda.core.entities.MessageChannel;
 import net.dv8tion.jda.core.entities.User;
 import r00l.lazurita.bot.Bot;
-
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-
 import java.awt.Color;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
+
 
 
 public class WeatherCommand implements Command {

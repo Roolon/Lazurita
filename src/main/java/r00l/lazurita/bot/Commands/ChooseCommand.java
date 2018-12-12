@@ -7,8 +7,6 @@ import net.dv8tion.jda.core.entities.User;
 import r00l.lazurita.bot.Bot;
 
 import java.awt.*;
-import java.util.ArrayList;
-import java.util.List;
 
 public class ChooseCommand implements Command {
 

@@ -25,17 +25,17 @@ public class RandomCoinCommand implements Command {
 
             switch (rnd1) {
                 case 1:
-                    ask_string = "Орел";
+                    ask_string = "РћСЂРµР»";
                     break;
                 case 2:
-                    ask_string = "Решка";
+                    ask_string = "Р РµС€РєР°";
                     break;
                 case 3:
-                    ask_string = "Монета встала на ребро и укатилась...";
+                    ask_string = "РњРѕРЅРµС‚Р° РІСЃС‚Р°Р»Р° РЅР° СЂРµР±СЂРѕ Рё СѓРєР°С‚РёР»Р°СЃСЊ...";
                     break;
             }
 
-            embedBuilder.addField("подбрасывает монетку:", ask_string, true);
+            embedBuilder.addField("РїРѕРґР±СЂР°СЃС‹РІР°РµС‚ РјРѕРЅРµС‚РєСѓ:", ask_string, true);
             channel.sendMessage(embedBuilder.build()).queue();
             return true;
         } else {
