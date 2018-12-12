@@ -16,10 +16,7 @@ import net.dv8tion.jda.core.entities.User;
 import r00l.lazurita.bot.Bot;
 
 public class Rule34Command implements Command {
-	
-
-
-public Rule34Command() {   }	  	    	
+public Rule34Command() {   }
 
 
 
