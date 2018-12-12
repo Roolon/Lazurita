@@ -18,7 +18,7 @@ public class Bot extends ListenerAdapter {
     private CommandControl commandControl;
     private TextChannel defaultChannel;
 
-    // Переменные в конфиг-файле
+    // РџРµСЂРµРјРµРЅРЅС‹Рµ РІ РєРѕРЅС„РёРі-С„Р°Р№Р»Рµ
     public String endingMessage;
     public boolean allowReactionsToBots;
     public boolean allowAudio;
@@ -29,11 +29,11 @@ public class Bot extends ListenerAdapter {
     public boolean allowAnyTimeReactions;
     public boolean allowOnlyDefaultChannel;
 
-    // Юзеры со специальными правами
+    // Р®Р·РµСЂС‹ СЃРѕ СЃРїРµС†РёР°Р»СЊРЅС‹РјРё РїСЂР°РІР°РјРё
     public User master;
     public User creator;
 
-    // Переменные для бота
+    // РџРµСЂРµРјРµРЅРЅС‹Рµ РґР»СЏ Р±РѕС‚Р°
     public Member member; // Member object of bot
     public User user; // User object of bot
     public Role role; // Special bot role
@@ -43,7 +43,7 @@ public class Bot extends ListenerAdapter {
         this.config = config;
 
         try {
-            // инициализация конфига
+            // РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ РєРѕРЅС„РёРіР°
             endingMessage = config.getEndingMessage();
             allowAnyTimeReactions = config.isAllowReactsAnytime();
             allowReactionsToBots = config.isAllowReactsToBots();
@@ -54,7 +54,7 @@ public class Bot extends ListenerAdapter {
             allowEndingMessage = config.isAllowEndingMessage();
             allowOnlyDefaultChannel = config.isAllowOnlyDefaultChannel();
 
-            // инициализация бота
+            // РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ Р±РѕС‚Р°
             try {
 			  user = Launcher.getUser(Launcher.jda.getSelfUser().getId());
             	} catch (NullPointerException|IndexOutOfBoundsException e) {
@@ -71,7 +71,7 @@ public class Bot extends ListenerAdapter {
             creator = Launcher.getUser(config.getCreator());
             role = Launcher.getRole(config.getRole());
             if (config.getKey() == null)
-                key = user.getName().toLowerCase().substring(0, 2) + "/"; // если в конфиге не найден ключ - ключом бота будут две первые буквы имени + '/'
+                key = user.getName().toLowerCase().substring(0, 2) + "/"; // РµСЃР»Рё РІ РєРѕРЅС„РёРіРµ РЅРµ РЅР°Р№РґРµРЅ РєР»СЋС‡ - РєР»СЋС‡РѕРј Р±РѕС‚Р° Р±СѓРґСѓС‚ РґРІРµ РїРµСЂРІС‹Рµ Р±СѓРєРІС‹ РёРјРµРЅРё + '/'
             else
                 key = config.getKey();
 
@@ -80,7 +80,7 @@ public class Bot extends ListenerAdapter {
                 Launcher.jda.getPresence().setGame(Game.of(GameType.DEFAULT, isPlaying));
             }
 
-            // Вывод данных в консоль
+            // Р’С‹РІРѕРґ РґР°РЅРЅС‹С… РІ РєРѕРЅСЃРѕР»СЊ
             System.out.println("My name: " + user.getName());
             System.out.println("My key: " + key);
             if (role != null)
@@ -96,7 +96,7 @@ public class Bot extends ListenerAdapter {
             else
                 System.out.println("No creator found");
 
-            // Инициализация команд
+            // РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ РєРѕРјР°РЅРґ
             commandControl = new CommandControl(config.getCommands());
 
             try {
@@ -114,7 +114,7 @@ public class Bot extends ListenerAdapter {
     }
 
     /**
-     * созадем бота в JDA и связываем его с Лаунчером
+     * СЃРѕР·Р°РґРµРј Р±РѕС‚Р° РІ JDA Рё СЃРІСЏР·С‹РІР°РµРј РµРіРѕ СЃ Р›Р°СѓРЅС‡РµСЂРѕРј
      */
     public void reset() {
         Launcher.jda.removeEventListener(this);
@@ -139,7 +139,7 @@ public class Bot extends ListenerAdapter {
     }
 
     /**
-     * ловим события на канале с ботом
+     * Р»РѕРІРёРј СЃРѕР±С‹С‚РёСЏ РЅР° РєР°РЅР°Р»Рµ СЃ Р±РѕС‚РѕРј
      */
     @Override
     public void onMessageReceived(MessageReceivedEvent event) {
@@ -149,8 +149,8 @@ public class Bot extends ListenerAdapter {
         }
 
         /**
-         * выдираем текст сообщения через getContentDisplay()
-         * возможно тут нужно RAW, (нинужно, работает так)
+         * РІС‹РґРёСЂР°РµРј С‚РµРєСЃС‚ СЃРѕРѕР±С‰РµРЅРёСЏ С‡РµСЂРµР· getContentDisplay()
+         * РІРѕР·РјРѕР¶РЅРѕ С‚СѓС‚ РЅСѓР¶РЅРѕ RAW, (РЅРёРЅСѓР¶РЅРѕ, СЂР°Р±РѕС‚Р°РµС‚ С‚Р°Рє)
          */
         
         if (!event.getAuthor().isBot() || (allowReactionsToBots && !event.getAuthor().equals(user))) {

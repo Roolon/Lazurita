@@ -42,7 +42,7 @@ public class MolCommand implements Command {
             } catch (IOException e) {
                 // TODO Auto-generated catch block
 
-                embedBuilder.addField("Поиск по molites.ru:", "УВАГА: Ошибка соединения.", true);
+                embedBuilder.addField("РџРѕРёСЃРє РїРѕ molites.ru:", "РЈР’РђР“Рђ: РћС€РёР±РєР° СЃРѕРµРґРёРЅРµРЅРёСЏ.", true);
                 channel.sendMessage(embedBuilder.build()).queue();
             }
 
@@ -68,13 +68,13 @@ public class MolCommand implements Command {
             }
 
             if (linkscash.size()==0){
-                embedBuilder.addField("Поиск по molites.ru:", "УВАГА: Ошибка получения содержимого.", true);
+                embedBuilder.addField("РџРѕРёСЃРє РїРѕ molites.ru:", "РЈР’РђР“Рђ: РћС€РёР±РєР° РїРѕР»СѓС‡РµРЅРёСЏ СЃРѕРґРµСЂР¶РёРјРѕРіРѕ.", true);
                 channel.sendMessage(embedBuilder.build()).queue();
             }
             else {
 
                 String text = linkscash.get(1);
-                embedBuilder.addField("Поиск по molites.ru:", text, true);
+                embedBuilder.addField("РџРѕРёСЃРє РїРѕ molites.ru:", text, true);
                 channel.sendMessage(embedBuilder.build()).queue();
                 //     message.delete().queue();}
 

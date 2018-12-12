@@ -14,7 +14,7 @@ public class SayCommand implements Command {
                 channel.deleteMessageById(message.getId()).queue();
 
                 channel.sendMessage(inputs[1]).queue();
-                System.out.println(author.getName() + " говорит: " + inputs[1]);
+                System.out.println(author.getName() + " РіРѕРІРѕСЂРёС‚: " + inputs[1]);
             }
 
             return true;

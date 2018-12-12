@@ -29,188 +29,188 @@ public class AskCommand implements Command {
                     switch (rnd) {
                         case 1:
                             if (global_rnd == 1) {
-                                ask_string = "Да.";
+                                ask_string = "Р”Р°.";
                             }
                             if (global_rnd == 2) {
-                                ask_string = "Ага!";
+                                ask_string = "РђРіР°!";
                             }
                             if (global_rnd == 3) {
-                                ask_string = "Еще как!";
+                                ask_string = "Р•С‰Рµ РєР°Рє!";
                             }
                             if (global_rnd == 4) {
-                                ask_string = "О чем речь? Конечно да!";
+                                ask_string = "Рћ С‡РµРј СЂРµС‡СЊ? РљРѕРЅРµС‡РЅРѕ РґР°!";
                             }
                             if (global_rnd == 5) {
-                                ask_string = "Угу.";
+                                ask_string = "РЈРіСѓ.";
                             }
                             if (global_rnd == 6) {
-                                ask_string = "Так и есть.";
+                                ask_string = "РўР°Рє Рё РµСЃС‚СЊ.";
                             }
                             if (global_rnd == 7) {
-                                ask_string = "Всё так.";
+                                ask_string = "Р’СЃС‘ С‚Р°Рє.";
                             }
                             if (global_rnd == 8) {
-                                ask_string = "Известное дело.";
+                                ask_string = "РР·РІРµСЃС‚РЅРѕРµ РґРµР»Рѕ.";
                             }
                             if (global_rnd == 9) {
-                                ask_string = "А что? Разве могло быть иначе?";
+                                ask_string = "Рђ С‡С‚Рѕ? Р Р°Р·РІРµ РјРѕРіР»Рѕ Р±С‹С‚СЊ РёРЅР°С‡Рµ?";
                             }
                             if (global_rnd == 10) {
-                                ask_string = "А то!";
+                                ask_string = "Рђ С‚Рѕ!";
                             }
                             if (global_rnd == 11) {
-                                ask_string = "Агась.";
+                                ask_string = "РђРіР°СЃСЊ.";
                             }
                             if (global_rnd == 12) {
-                                ask_string = "Конечно.";
+                                ask_string = "РљРѕРЅРµС‡РЅРѕ.";
                             }
                             if (global_rnd == 13) {
-                                ask_string = "Не подлежит сомнению.";
+                                ask_string = "РќРµ РїРѕРґР»РµР¶РёС‚ СЃРѕРјРЅРµРЅРёСЋ.";
                             }
                             if (global_rnd == 14) {
-                                ask_string = "Нечего и говорить.";
+                                ask_string = "РќРµС‡РµРіРѕ Рё РіРѕРІРѕСЂРёС‚СЊ.";
                             }
                             if (global_rnd == 15) {
-                                ask_string = "Безоговорочно.";
+                                ask_string = "Р‘РµР·РѕРіРѕРІРѕСЂРѕС‡РЅРѕ.";
                             }
                             if (global_rnd == 16) {
-                                ask_string = "Само собой разумеется.";
+                                ask_string = "РЎР°РјРѕ СЃРѕР±РѕР№ СЂР°Р·СѓРјРµРµС‚СЃСЏ.";
                             }
                             if (global_rnd == 17) {
-                                ask_string = "Иначе и быть не может.";
+                                ask_string = "РРЅР°С‡Рµ Рё Р±С‹С‚СЊ РЅРµ РјРѕР¶РµС‚.";
                             }
                             if (global_rnd == 18) {
-                                ask_string = "Наверняка.";
+                                ask_string = "РќР°РІРµСЂРЅСЏРєР°.";
                             }
                             if (global_rnd == 19) {
-                                ask_string = "Без всяких.";
+                                ask_string = "Р‘РµР· РІСЃСЏРєРёС….";
                             }
                             if (global_rnd == 20) {
-                                ask_string = "Знамо дело.";
+                                ask_string = "Р—РЅР°РјРѕ РґРµР»Рѕ.";
                             }
                             break;
                         case 2:
                             if (global_rnd == 1) {
-                                ask_string = "Нет.";
+                                ask_string = "РќРµС‚.";
                             }
                             if (global_rnd == 2) {
-                                ask_string = "Не-а!";
+                                ask_string = "РќРµ-Р°!";
                             }
                             if (global_rnd == 3) {
-                                ask_string = "Дожидайся :-)";
+                                ask_string = "Р”РѕР¶РёРґР°Р№СЃСЏ :-)";
                             }
                             if (global_rnd == 4) {
-                                ask_string = "Увольте!";
+                                ask_string = "РЈРІРѕР»СЊС‚Рµ!";
                             }
                             if (global_rnd == 5) {
-                                ask_string = "Фигушки.";
+                                ask_string = "Р¤РёРіСѓС€РєРё.";
                             }
                             if (global_rnd == 6) {
-                                ask_string = "Никак нет.";
+                                ask_string = "РќРёРєР°Рє РЅРµС‚.";
                             }
                             if (global_rnd == 7) {
-                                ask_string = "Нетути.";
+                                ask_string = "РќРµС‚СѓС‚Рё.";
                             }
                             if (global_rnd == 8) {
-                                ask_string = "Отнюдь.";
+                                ask_string = "РћС‚РЅСЋРґСЊ.";
                             }
                             if (global_rnd == 9) {
-                                ask_string = "Да что вы говорите?";
+                                ask_string = "Р”Р° С‡С‚Рѕ РІС‹ РіРѕРІРѕСЂРёС‚Рµ?";
                             }
                             if (global_rnd == 10) {
-                                ask_string = "Гнусная ложь!";
+                                ask_string = "Р“РЅСѓСЃРЅР°СЏ Р»РѕР¶СЊ!";
                             }
                             if (global_rnd == 11) {
-                                ask_string = "Вранье.";
+                                ask_string = "Р’СЂР°РЅСЊРµ.";
                             }
                             if (global_rnd == 12) {
-                                ask_string = "Как бы не так.";
+                                ask_string = "РљР°Рє Р±С‹ РЅРµ С‚Р°Рє.";
                             }
                             if (global_rnd == 13) {
-                                ask_string = "Глупости.";
+                                ask_string = "Р“Р»СѓРїРѕСЃС‚Рё.";
                             }
                             if (global_rnd == 14) {
-                                ask_string = "Ерунда.";
+                                ask_string = "Р•СЂСѓРЅРґР°.";
                             }
                             if (global_rnd == 15) {
-                                ask_string = "Сомнительно.";
+                                ask_string = "РЎРѕРјРЅРёС‚РµР»СЊРЅРѕ.";
                             }
                             if (global_rnd == 16) {
-                                ask_string = "Чушь.";
+                                ask_string = "Р§СѓС€СЊ.";
                             }
                             if (global_rnd == 17) {
-                                ask_string = "Наговоры и враньё.";
+                                ask_string = "РќР°РіРѕРІРѕСЂС‹ Рё РІСЂР°РЅСЊС‘.";
                             }
                             if (global_rnd == 18) {
-                                ask_string = "Ересь.";
+                                ask_string = "Р•СЂРµСЃСЊ.";
                             }
                             if (global_rnd == 19) {
-                                ask_string = "Ерунда.";
+                                ask_string = "Р•СЂСѓРЅРґР°.";
                             }
                             if (global_rnd == 20) {
-                                ask_string = "Чёрта с два!";
+                                ask_string = "Р§С‘СЂС‚Р° СЃ РґРІР°!";
                             }
                             break;
                         case 3:
                             if (global_rnd == 1) {
-                                ask_string = "Понятия не имею.";
+                                ask_string = "РџРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ.";
                             }
                             if (global_rnd == 2) {
-                                ask_string = "А мне почем знать?";
+                                ask_string = "Рђ РјРЅРµ РїРѕС‡РµРј Р·РЅР°С‚СЊ?";
                             }
                             if (global_rnd == 3) {
-                                ask_string = "Позвоните в справочную :-)";
+                                ask_string = "РџРѕР·РІРѕРЅРёС‚Рµ РІ СЃРїСЂР°РІРѕС‡РЅСѓСЋ :-)";
                             }
                             if (global_rnd == 4) {
-                                ask_string = "Странный вопрос.";
+                                ask_string = "РЎС‚СЂР°РЅРЅС‹Р№ РІРѕРїСЂРѕСЃ.";
                             }
                             if (global_rnd == 5) {
-                                ask_string = "Я не спец в этом деле.";
+                                ask_string = "РЇ РЅРµ СЃРїРµС† РІ СЌС‚РѕРј РґРµР»Рµ.";
                             }
                             if (global_rnd == 6) {
-                                ask_string = "Лучше блинов покушай.";
+                                ask_string = "Р›СѓС‡С€Рµ Р±Р»РёРЅРѕРІ РїРѕРєСѓС€Р°Р№.";
                             }
                             if (global_rnd == 7) {
-                                ask_string = "Это вопрос?";
+                                ask_string = "Р­С‚Рѕ РІРѕРїСЂРѕСЃ?";
                             }
                             if (global_rnd == 8) {
-                                ask_string = "Сам то как думаешь?";
+                                ask_string = "РЎР°Рј С‚Рѕ РєР°Рє РґСѓРјР°РµС€СЊ?";
                             }
                             if (global_rnd == 9) {
-                                ask_string = "У бати травы воруешь? Такую херню спросил...";
+                                ask_string = "РЈ Р±Р°С‚Рё С‚СЂР°РІС‹ РІРѕСЂСѓРµС€СЊ? РўР°РєСѓСЋ С…РµСЂРЅСЋ СЃРїСЂРѕСЃРёР»...";
                             }
                             if (global_rnd == 10) {
-                                ask_string = "Поехавший! Ну и вопросы.";
+                                ask_string = "РџРѕРµС…Р°РІС€РёР№! РќСѓ Рё РІРѕРїСЂРѕСЃС‹.";
                             }
                             if (global_rnd == 11) {
-                                ask_string = "Лол.";
+                                ask_string = "Р›РѕР».";
                             }
                             if (global_rnd == 12) {
-                                ask_string = "Кек.";
+                                ask_string = "РљРµРє.";
                             }
                             if (global_rnd == 13) {
-                                ask_string = "Это что-то из новых мемов?";
+                                ask_string = "Р­С‚Рѕ С‡С‚Рѕ-С‚Рѕ РёР· РЅРѕРІС‹С… РјРµРјРѕРІ?";
                             }
                             if (global_rnd == 14) {
-                                ask_string = "Азазазаза.";
+                                ask_string = "РђР·Р°Р·Р°Р·Р°Р·Р°.";
                             }
                             if (global_rnd == 15) {
-                                ask_string = "Кекус.";
+                                ask_string = "РљРµРєСѓСЃ.";
                             }
                             if (global_rnd == 16) {
-                                ask_string = "Да ты хуже ПСА. Хуйню несешь.";
+                                ask_string = "Р”Р° С‚С‹ С…СѓР¶Рµ РџРЎРђ. РҐСѓР№РЅСЋ РЅРµСЃРµС€СЊ.";
                             }
                             if (global_rnd == 17) {
-                                ask_string = "На Лилиуме тоже такое спрашивали.";
+                                ask_string = "РќР° Р›РёР»РёСѓРјРµ С‚РѕР¶Рµ С‚Р°РєРѕРµ СЃРїСЂР°С€РёРІР°Р»Рё.";
                             }
                             if (global_rnd == 18) {
-                                ask_string = "Ты хохол что-ли?";
+                                ask_string = "РўС‹ С…РѕС…РѕР» С‡С‚Рѕ-Р»Рё?";
                             }
                             if (global_rnd == 19) {
-                                ask_string = "Не смеши мои соленоиды.";
+                                ask_string = "РќРµ СЃРјРµС€Рё РјРѕРё СЃРѕР»РµРЅРѕРёРґС‹.";
                             }
                             if (global_rnd == 20) {
-                                ask_string = "Ниняю ;-)";
+                                ask_string = "РќРёРЅСЏСЋ ;-)";
                             }
                             break;
                     }

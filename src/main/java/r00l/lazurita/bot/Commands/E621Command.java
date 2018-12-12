@@ -40,7 +40,7 @@ public class E621Command implements Command {
             } catch (IOException e) {
                 // TODO Auto-generated catch block
 
-                embedBuilder.addField("Поиск по e621: `" + inputs[1] + "`", "УВАГА: Тег не найден.", true);
+                embedBuilder.addField("РџРѕРёСЃРє РїРѕ e621: `" + inputs[1] + "`", "РЈР’РђР“Рђ: РўРµРі РЅРµ РЅР°Р№РґРµРЅ.", true);
                 channel.sendMessage(embedBuilder.build()).queue();
             }
 
@@ -66,11 +66,11 @@ public class E621Command implements Command {
             }
 
             if (linkscash.size()==0){
-                embedBuilder.addField("Поиск по e621: `" + inputs[1] + "`", "УВАГА: Ошибка получения содержимого.", true);
+                embedBuilder.addField("РџРѕРёСЃРє РїРѕ e621: `" + inputs[1] + "`", "РЈР’РђР“Рђ: РћС€РёР±РєР° РїРѕР»СѓС‡РµРЅРёСЏ СЃРѕРґРµСЂР¶РёРјРѕРіРѕ.", true);
                 channel.sendMessage(embedBuilder.build()).queue();
             }
             else {
-                embedBuilder.setTitle("Поиск по e621: `" + inputs[1] + "`");
+                embedBuilder.setTitle("РџРѕРёСЃРє РїРѕ e621: `" + inputs[1] + "`");
                 int rnd = (int) (Math.random() * ((linkscash.size())));
                 embedBuilder.setImage(linkscash.get(rnd));
                 channel.sendMessage(embedBuilder.build()).queue();

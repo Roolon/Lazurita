@@ -39,7 +39,7 @@ public boolean execute(Bot bot, Message message, MessageChannel channel, User au
 			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
-			embedBuilder.addField("Поиск по rule34: `" + inputs[1] + "`", "УВАГА: Тег не найден.", true);
+			embedBuilder.addField("РџРѕРёСЃРє РїРѕ rule34: `" + inputs[1] + "`", "РЈР’РђР“Рђ: РўРµРі РЅРµ РЅР°Р№РґРµРЅ.", true);
 			 channel.sendMessage(embedBuilder.build()).queue();
 		}
 
@@ -65,11 +65,11 @@ public boolean execute(Bot bot, Message message, MessageChannel channel, User au
          }
          
          if (linkscash.size()==0){
-             embedBuilder.addField("Поиск по rule34: `" + inputs[1] + "`", "УВАГА: Ошибка получения содержимого.", true);
+             embedBuilder.addField("РџРѕРёСЃРє РїРѕ rule34: `" + inputs[1] + "`", "РЈР’РђР“Рђ: РћС€РёР±РєР° РїРѕР»СѓС‡РµРЅРёСЏ СЃРѕРґРµСЂР¶РёРјРѕРіРѕ.", true);
              channel.sendMessage(embedBuilder.build()).queue();
          }
          else {
-             embedBuilder.setTitle("Поиск по rule34: `" + inputs[1] + "`");
+             embedBuilder.setTitle("РџРѕРёСЃРє РїРѕ rule34: `" + inputs[1] + "`");
              int rnd = (int) (Math.random() * ((linkscash.size())));
              embedBuilder.setImage(linkscash.get(rnd));
              channel.sendMessage(embedBuilder.build()).queue();

@@ -42,7 +42,7 @@ public class StulCommand implements Command {
             } catch (IOException e) {
                 // TODO Auto-generated catch block
 
-                embedBuilder.addField("Поиск по stulchik.cc:", "УВАГА: Ошибка соединения.", true);
+                embedBuilder.addField("РџРѕРёСЃРє РїРѕ stulchik.cc:", "РЈР’РђР“Рђ: РћС€РёР±РєР° СЃРѕРµРґРёРЅРµРЅРёСЏ.", true);
                 channel.sendMessage(embedBuilder.build()).queue();
             }
 
@@ -68,13 +68,13 @@ public class StulCommand implements Command {
             }
 
             if (linkscash.size()==0){
-                embedBuilder.addField("Поиск по stulchik.cc:", "УВАГА: Ошибка получения содержимого.", true);
+                embedBuilder.addField("РџРѕРёСЃРє РїРѕ stulchik.cc:", "РЈР’РђР“Рђ: РћС€РёР±РєР° РїРѕР»СѓС‡РµРЅРёСЏ СЃРѕРґРµСЂР¶РёРјРѕРіРѕ.", true);
                 channel.sendMessage(embedBuilder.build()).queue();
             }
             else {
 
-                String text = linkscash.get(0).replace(".  ", "\n").replace("      ", "\n");
-                embedBuilder.addField("Поиск по stulchik.cc:", text.substring(0, 997) + "...", true);
+                String text = linkscash.get(0).replace(".  ", "\n").replace(" В В В В В ", "\n");
+                embedBuilder.addField("РџРѕРёСЃРє РїРѕ stulchik.cc:", text.substring(0, 997) + "...", true);
                 channel.sendMessage(embedBuilder.build()).queue();
                 //  message.delete().queue();}
 

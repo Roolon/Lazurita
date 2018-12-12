@@ -67,7 +67,7 @@ public class WeatherCommand implements Command {
 
              }
 
-             embedBuilder.addField(linkscash.get(0)+"\n"+linkscash.get(1).replace("Clouds","\n"+"Облачность").replace("Humidity","\n"+"Влажность").replace("Wind","\n"+"Ветер").replace("m/s","м/с").replace("Pressure","\n"+"Давление").replace("hpa"," гПа"),"",true);
+             embedBuilder.addField(linkscash.get(0)+"\n"+linkscash.get(1).replace("Clouds","\n"+"РћР±Р»Р°С‡РЅРѕСЃС‚СЊ").replace("Humidity","\n"+"Р’Р»Р°Р¶РЅРѕСЃС‚СЊ").replace("Wind","\n"+"Р’РµС‚РµСЂ").replace("m/s","Рј/СЃ").replace("Pressure","\n"+"Р”Р°РІР»РµРЅРёРµ").replace("hpa"," РіРџР°"),"",true);
              channel.sendMessage(embedBuilder.build()).queue();
              
              

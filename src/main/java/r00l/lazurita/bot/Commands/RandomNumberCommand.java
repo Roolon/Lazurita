@@ -23,7 +23,7 @@ public class RandomNumberCommand implements Command {
 
             int rnd4 = 1 + (int) (Math.random() * ((100 - 1) + 1));
 
-            embedBuilder.addField("бросаает кубик 1d100:", String.valueOf(rnd4), true);
+            embedBuilder.addField("Р±СЂРѕСЃР°Р°РµС‚ РєСѓР±РёРє 1d100:", String.valueOf(rnd4), true);
             channel.sendMessage(embedBuilder.build()).queue();
 
             return true;

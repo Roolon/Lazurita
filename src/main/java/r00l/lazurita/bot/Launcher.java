@@ -28,15 +28,15 @@ public class Launcher {
             Properties properties = new Properties();
             properties.load(fileInputStream);
 
-            Config config = new Config(properties); // грузим конфиг
+            Config config = new Config(properties); // РіСЂСѓР·РёРј РєРѕРЅС„РёРі
 
             jda = new JDABuilder(AccountType.BOT)
-                    .setToken(config.getToken())    // читаем токен бота
+                    .setToken(config.getToken())    // С‡РёС‚Р°РµРј С‚РѕРєРµРЅ Р±РѕС‚Р°
                     .build()
-                    .awaitReady();               // синхронизируем код бота с JDA через лончер
+                    .awaitReady();               // СЃРёРЅС…СЂРѕРЅРёР·РёСЂСѓРµРј РєРѕРґ Р±РѕС‚Р° СЃ JDA С‡РµСЂРµР· Р»РѕРЅС‡РµСЂ
 
-            Bot bot = new Bot(config); // грузим конфиг в инстанс от JDA
-            jda.addEventListener(bot); // добавляем бота как листенера евентов
+            Bot bot = new Bot(config); // РіСЂСѓР·РёРј РєРѕРЅС„РёРі РІ РёРЅСЃС‚Р°РЅСЃ РѕС‚ JDA
+            jda.addEventListener(bot); // РґРѕР±Р°РІР»СЏРµРј Р±РѕС‚Р° РєР°Рє Р»РёСЃС‚РµРЅРµСЂР° РµРІРµРЅС‚РѕРІ
         } catch (LoginException e) {
             e.printStackTrace();
         } catch (IOException e) {

@@ -20,7 +20,7 @@ public class Config {
     private String newChannelMessage;
     private String isPlaying;
     private boolean allowOnlyDefaultChannel;
-    private boolean allowAudio; // Á‡‰ÂÎ Ì‡ ‡·ÓÚÛ Ò ‡Û‰ËÓ =\
+    private boolean allowAudio; // –∑–∞–¥–µ–ª –Ω–∞ —Ä–∞–±–æ—Ç—É —Å –∞—É–¥–∏–æ =\
     private boolean allowNsfw;
     private boolean allowReactsAnytime;
     private boolean allowReactsToBots;
@@ -56,10 +56,10 @@ public class Config {
         role = getProperty(properties, "role");
         isPlaying = getProperty(properties, "isPlaying");
         defaultChannel = getProperty(properties, "defaultChannel");
-        openingMessage = getProperty(properties, "openingMessage", "œ–»¬¿ œ≈ƒ» »))))))))))))))xDDDDDDDDDD");
-        endingMessage = getProperty(properties, "endingMessage", "œŒ » œ≈ƒ» »)))))xDDDDDDDDDDDDDDDDDDDDDD");
-        newChannelMessage = getProperty(properties, "newChannelMessage", " ¿Õ¿À —À¿ƒ »… ¿Õ¿À!");
-        allowAudio = Boolean.parseBoolean(getProperty(properties, "allowAudio", "false")); // Á‡‰ÂÎ Ì‡ ‡·ÓÚÛ Ò ‡Û‰ËÓ =\
+        openingMessage = getProperty(properties, "openingMessage", "–ü–†–ò–í–ê –ü–ï–î–ò–ö–ò))))))))))))))xDDDDDDDDDD");
+        endingMessage = getProperty(properties, "endingMessage", "–ü–û–ö–ò –ü–ï–î–ò–ö–ò)))))xDDDDDDDDDDDDDDDDDDDDDD");
+        newChannelMessage = getProperty(properties, "newChannelMessage", "–ö–ê–ù–ê–õ –°–õ–ê–î–ö–ò–ô –ê–ù–ê–õ!");
+        allowAudio = Boolean.parseBoolean(getProperty(properties, "allowAudio", "false")); // –∑–∞–¥–µ–ª –Ω–∞ —Ä–∞–±–æ—Ç—É —Å –∞—É–¥–∏–æ =\
         allowNsfw = Boolean.parseBoolean(getProperty(properties, "allowNsfw", "false"));
         allowReactsAnytime = Boolean.parseBoolean(getProperty(properties, "allowReactsAnytime", "false"));
         allowReactsToBots = Boolean.parseBoolean(getProperty(properties, "allowReactsToBots", "false"));
