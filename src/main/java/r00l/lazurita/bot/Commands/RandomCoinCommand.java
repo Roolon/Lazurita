@@ -7,6 +7,7 @@ import net.dv8tion.jda.core.entities.User;
 import r00l.lazurita.bot.Bot;
 
 import java.awt.*;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class RandomCoinCommand implements Command {
 
@@ -20,17 +21,16 @@ public class RandomCoinCommand implements Command {
                 .setColor(Color.decode("#AB82FF"));
 
         if (inputs[0].equalsIgnoreCase("coin")) {
-            int rnd1 = 1 + (int) (Math.random() * ((2 - 1) + 1));
-            String ask_string = new String();
+            String ask_string;
 
-            switch (rnd1) {
+            switch (ThreadLocalRandom.current().nextInt(1, 3)) {
                 case 1:
                     ask_string = "Орел";
                     break;
                 case 2:
                     ask_string = "Решка";
                     break;
-                case 3:
+                default:
                     ask_string = "Монета встала на ребро и укатилась...";
                     break;
             }

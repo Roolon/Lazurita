@@ -7,13 +7,14 @@ import net.dv8tion.jda.core.entities.User;
 import r00l.lazurita.bot.Bot;
 
 import java.awt.*;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class RandomDiceCommand implements Command {
 
     @Override
     public boolean execute(Bot bot, Message message, MessageChannel channel, User author, String... inputs) {
 
-       // channel.deleteMessageById(message.getId()).queue();
+        // channel.deleteMessageById(message.getId()).queue();
 
         EmbedBuilder embedBuilder = new EmbedBuilder()
                 .setAuthor(author.getName(), author.getAvatarUrl(), author.getAvatarUrl())
@@ -21,8 +22,8 @@ public class RandomDiceCommand implements Command {
 
 
         if (inputs[0].equalsIgnoreCase("dice")) {
-            int rnd = 1 + (int) (Math.random() * ((6 - 1) + 1));
-            embedBuilder.addField("выбрасывает кубик 1d6:", String.valueOf(rnd), true);
+
+            embedBuilder.addField("выбрасывает кубик 1d6:", String.valueOf(ThreadLocalRandom.current().nextInt(1, 6)), true);
             channel.sendMessage(embedBuilder.build()).queue();
             return true;
         } else {
