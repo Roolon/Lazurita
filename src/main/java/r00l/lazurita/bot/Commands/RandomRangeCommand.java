@@ -16,45 +16,40 @@ public class RandomRangeCommand implements Command {
     @Override
     public boolean execute(Bot bot, Message message, MessageChannel channel, User author, String... inputs) {
         try {
-
-            if (inputs[1] != null) {
-
-                String args[] = inputs[1].split(" ");
+            String args[] = inputs[1].split(" ");
 
 
-                //channel.deleteMessageById(message.getId()).queue();
+            //channel.deleteMessageById(message.getId()).queue();
 
-                EmbedBuilder embedBuilder = new EmbedBuilder()
-                        .setAuthor(author.getName(), author.getAvatarUrl(), author.getAvatarUrl())
-                        .setColor(Color.decode("#AB82FF"));
-
-                if (inputs[0].equalsIgnoreCase("rng") && (args.length == 2 && args[0].matches("[-+]?\\d+") && args[1].matches("[-+]?\\d+"))) {
+            EmbedBuilder embedBuilder = new EmbedBuilder()
+                    .setAuthor(author.getName(), author.getAvatarUrl(), author.getAvatarUrl())
+                    .setColor(Color.decode("#AB82FF"));
 
 
-                    int min = Integer.valueOf(args[0]);
-                    int max = Integer.valueOf(args[1]);
+            if (inputs[0].equalsIgnoreCase("rng") && (args.length == 2 && args[0].matches("[-+]?\\d+") && args[1].matches("[-+]?\\d+"))) {
 
-                    embedBuilder.addField("random[" + min + "-" + max + "]:", String.valueOf(ThreadLocalRandom.current().nextInt(min, max)), true);
-                    channel.sendMessage(embedBuilder.build()).queue();
 
-                    return true;
+                int min = Integer.valueOf(args[0]);
+                int max = Integer.valueOf(args[1]);
 
-                } else {
-                    return false;
+                embedBuilder.addField("random[" + min + "-" + max + "]:", String.valueOf(ThreadLocalRandom.current().nextInt(min, max)), true);
+                channel.sendMessage(embedBuilder.build()).queue();
 
-                }
+                return true;
 
+            } else {
+                return false;
 
             }
+
         } catch (Exception e) {
             e.printStackTrace();
-
-
-            return true;
         }
+
 
         return false;
     }
-
 }
+
+
 

@@ -1,8 +1,10 @@
 group 'r00l.lazurita'
-version '2.0'
+version '1.0'
 
 apply plugin: 'java'
 apply plugin: 'application'
+
+mainClassName = 'r00l.lazurita.bot.Main'
 
 sourceCompatibility = 1.8
 
@@ -38,4 +40,13 @@ jar {
         attributes 'Main-Class': 'r00l.lazurita.bot.Main',
                    'Class-Path': configurations.runtime.files.collect { "lib/$it.name" }.join(' ')
     }
+	
+from {
+    configurations
+      .compile
+      .findAll { !it.name.endsWith('pom') }
+      .collect { it.isDirectory() ? it : zipTree(it) }
+	}  
+	
 }
+	
