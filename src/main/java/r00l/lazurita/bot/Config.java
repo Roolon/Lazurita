@@ -46,6 +46,7 @@ public class Config {
         commands.add(new AskCommand());
         commands.add(new StulCommand());
         commands.add(new MolCommand());
+        commands.add(new AxelCommand());
 
 
 
