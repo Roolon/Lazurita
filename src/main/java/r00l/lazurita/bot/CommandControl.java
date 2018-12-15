@@ -16,7 +16,7 @@ class CommandControl {
         this.commands = commands;
     }
 
-    boolean execute(Bot bot, MessageReceivedEvent event, List<String> inputs) {
+    Boolean execute(Bot bot, MessageReceivedEvent event, List<String> inputs) {
         User author = event.getAuthor();
         Message message = event.getMessage();
         MessageChannel channel = event.getChannel();
